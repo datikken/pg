@@ -4,8 +4,25 @@
   "description": "DBMS Application Example",
   "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
   "license": "MIT",
-  "main": "application.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app,app:* nodemon app.js",
+    "lint": "eslint app.js"
+  },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "chalk": "^3.0.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "ejs": "^2.7.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
     "pg": "^7.12.1"
   }
 }

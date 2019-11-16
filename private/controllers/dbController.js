@@ -1,4 +1,4 @@
-const db = require('./models/db.js');
+const db = require('../models/db');
 
 const pg = db.open({
   host: '127.0.0.1',
@@ -17,3 +17,5 @@ pg.select('pg_tables')
     console.table(rows);
     pg.close();
 });
+
+module.exports = pg;
